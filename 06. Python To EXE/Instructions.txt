@@ -1,0 +1,3 @@
+1. Open command prompt in this folder
+2. Type "python <filename>.py build"
+3. Enter

@@ -1,0 +1,100 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+    <pattern>HI</pattern>
+    <template>Hello there , can i know your name?</template>
+</category>
+
+<category>
+    <pattern>HELLO</pattern>
+    <template><srai>HI</srai></template>
+</category>
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Oh,<set name="user"><star/></set> that's a nice name ! What kind of courses are you looking for?
+     The options available are:
+     Machine learning
+     AI
+     Java
+     Which course would you like to choose?</template>
+</category>
+
+<category>
+    <pattern>I WOULD LIKE TO CHOOSE *</pattern>
+    <template>Ok , <get name="user"/> type <set name="topic"><star/></set>to confirm
+    </template>
+
+</category>
+
+<topic name = "MACHINE LEARNING">
+    <category>
+        <pattern>MACHINE LEARNING</pattern>
+        <template>This will be for 3 months</template>
+    </category>
+
+    <category>
+        <pattern>WHAT WILL BE THE TOPICS COVERED</pattern>
+        <that>THIS WILL BE FOR 3 MONTHS</that>
+        <template>Okay , In machine learning you will learn about Algorithm and Types of machine learning
+        </template>
+    </category>
+ </topic>
+
+ <topic name = "AI">
+    <category>
+    <pattern>AI</pattern>
+    <template>It is a 4 months course</template>
+    </category>
+
+    <category>
+        <pattern> WHAT WILL BE THE TOPICS COVERED</pattern>
+        <that>IT IS A 4 MONTHS COURSE</that>
+        <template>Okay, here you will learn about types of artificial intelligence , building a chatbot</template>
+    </category>
+</topic>
+
+<topic name = "JAVA">
+    <category>
+        <pattern>JAVA</pattern>
+        <template>it is for 6 months</template>
+    </category>
+
+    <category>
+        <pattern>WHAT WILL BE THE TOPICS COVERED</pattern>
+        <that>IT IS FOR 6 MONTHS</that>
+        <template>In java you will learn programming in java from the scratch , to advanced programming in
+        java
+        </template>
+    </category>
+</topic>
+
+<category>
+    <pattern>I WOULD LIKE TO PAY</pattern>
+    <template>Confirm your payment method , we accept debit or credit card ,
+    to confirm type "credit" or "debit"</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <template><think><set name = "pay"><star/></set></think>
+    <condition name = "pay" value="debit">
+        The price through debit card is $400
+    </condition>
+    <condition name = "pay" value = "credit">
+        The price through credit card is $450
+    </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>OKAY THANK YOU</pattern>
+    <template>
+        <random>
+            <li>Thank you, Have a good day</li>
+            <li>Thank you for choosing us</li>
+            <li>Thank you, recommend it to others too !</li>
+        </random>
+    </template>
+</category>
+</aiml>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>LOAD AIML</pattern>
+        <template>
+            <learn>AIML_Files\*.aiml</learn>
+        </template>
+    </category>
+</aiml>
+
