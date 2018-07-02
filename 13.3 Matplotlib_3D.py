@@ -2,6 +2,7 @@
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 import numpy as np
+
 fig = plt.figure() # Creating the figure window
 ax1 = fig.add_subplot(1,1,1, projection = '3d') #Telling the intereeter to work on 3dimensions
 x =np.array( [[1,2,3,4,5],[6,7,8,9,10]])
