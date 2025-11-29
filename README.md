@@ -6,7 +6,7 @@
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)](LICENSE)
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="120" alt="Python Logo"/>
 
@@ -760,7 +760,7 @@ print(list(fibonacci(10)))
 ├── 📜 ASSIGNMENT RockPaperScissor.py
 ├── 📜 Numpy Efficiency.py          # Performance comparison
 ├── 📜 Programming assignments.txt   # 100+ exercises
-├── 📜 LICENSE                      # MIT License
+├── 📜 LICENSE                      # GNU GPLv3
 └── 📜 README.md                    # This file
 ```
 
@@ -780,7 +780,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
